@@ -1,0 +1,82 @@
+{
+  "A_baseline": {
+    "config": {
+      "hidden": 64,
+      "layers": 1,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "wd": 0.0001,
+      "batch": 64,
+      "epochs": 15,
+      "cw": false
+    },
+    "epochs": 13,
+    "test_acc": 90.11,
+    "macro_p": 0.898,
+    "macro_r": 0.901,
+    "macro_f1": 0.899,
+    "rain_p": 0.87,
+    "rain_r": 0.903,
+    "rain_f1": 0.886
+  },
+  "B_small": {
+    "config": {
+      "hidden": 32,
+      "layers": 1,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "wd": 0.0001,
+      "batch": 64,
+      "epochs": 15,
+      "cw": false
+    },
+    "epochs": 15,
+    "test_acc": 87.64,
+    "macro_p": 0.877,
+    "macro_r": 0.869,
+    "macro_f1": 0.872,
+    "rain_p": 0.882,
+    "rain_r": 0.819,
+    "rain_f1": 0.849
+  },
+  "C_deep_reg": {
+    "config": {
+      "hidden": 64,
+      "layers": 2,
+      "dropout": 0.5,
+      "lr": 0.0005,
+      "wd": 0.0001,
+      "batch": 64,
+      "epochs": 15,
+      "cw": false
+    },
+    "epochs": 15,
+    "test_acc": 88.19,
+    "macro_p": 0.878,
+    "macro_r": 0.885,
+    "macro_f1": 0.88,
+    "rain_p": 0.833,
+    "rain_r": 0.903,
+    "rain_f1": 0.867
+  },
+  "D_weighted": {
+    "config": {
+      "hidden": 64,
+      "layers": 1,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "wd": 0.0001,
+      "batch": 64,
+      "epochs": 15,
+      "cw": true
+    },
+    "epochs": 15,
+    "test_acc": 88.46,
+    "macro_p": 0.882,
+    "macro_r": 0.89,
+    "macro_f1": 0.883,
+    "rain_p": 0.827,
+    "rain_r": 0.923,
+    "rain_f1": 0.872
+  }
+}
